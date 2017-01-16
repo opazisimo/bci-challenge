@@ -1,0 +1,3 @@
+node_modules/*
+dist/css/style.min.css
+dist/js/script.min.js
