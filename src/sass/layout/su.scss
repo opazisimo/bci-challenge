@@ -31,47 +31,109 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
 /* Datos Cliente */
 
 #datos-cliente{
-  /*
-  .colores{
-    .color{
-      display: inline;
-      width: 25%;
-      height: 15px;
-      content: "gola";
-    }
-    &.verde{
-      background-color: $verde;
-    }
-    &.rojo {
-      background-color: $rojo;
-    }
-    &.azul{
-      background-color: $azul;
-    }
-    &.amarillo {
-      background-color: $amari;
-    }*/
-  /*}*/
   background-color: #161616;
   font-family: $open;
+  border-bottom: 1.5px solid $gris3;
+  padding: 20px 0;
+  .row{
+    margin: 0 !important;
+  }
   #datos{
+    p{
+      margin: 0;
+    }
     #nombre{
       color:#FCFCFC ;
-      font-size: 1.2em;
+      font-size: 1em;
     }
     #cuenta {
       color: $verde;
       font-weight: $open-bold;
-      font-size: 1.5em;
+      font-size: 1.1em;
     }
     .saldo {
       color:#FCFCFC ;
-      font-size: 12px;
+      font-size: 10px;
     }
     #cantidad {
       color: $azul;
-      font-size: 1.5em;
+      font-size: 1.1em;
       font-weight: $open-bold;
+    }
+  }
+  #movimientos{
+    color: $amari;
+  }
+}
+
+#franjas{
+  background-color: transparent;
+  .color{
+    width: 100vw !important;
+    background-color: transparent;
+    height: 5px !important;
+  }
+    .franja{
+      width: 24%;
+      height: 5px !important;
+      display: inline-block;
+    }
+    .verde{
+      background-color: $verde;
+    }
+    .rojo {
+      background-color: $rojo;
+    }
+    .azul{
+      background-color: $azul;
+    }
+    .amarillo {
+      background-color: $amari;
+    }
+}
+/* nav */
+.button-collapse {
+  float: right !important;
+}
+
+.responsive-img{
+  margin-top: 10px;
+  z-index: 10;
+}
+
+/* Principal */
+.fondo-i{
+  background-color: #161616 !important;
+  padding: 10px 0 !important;
+  img{
+    opacity: 0.8;
+  }
+  .titulo{
+    color: $gris3;
+    font-weight: $open-bold;
+    text-transform: uppercase;
+  }
+}
+
+.principal {
+  background-color: #161616 !important;
+}
+footer {
+  margin-top:20px;
+  height: 15vh;
+  background-color: #161616 !important;
+  .common-box {
+    height: 15vh !important;
+    text-align: center;
+    padding: 5px !important;
+    img{
+      width: 60%;
+      margin: 0 auto;
+    }
+    h5{
+      font-size: 12px !important;
+      font-weight: $open-bold;
+      margin: 0;
     }
   }
 }
