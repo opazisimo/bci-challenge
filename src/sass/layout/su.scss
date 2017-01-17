@@ -7,3 +7,240 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
 
 -Cada sección que hago la parto con un comentario con el nombre de la sección a trabajar
 */
+
+
+/* Splash Screen */
+
+#splash {
+  background-color: $negro;
+  text-align: center;
+  height: 100vh;
+  padding-top: 33vh;
+
+  .load{
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+    img{
+      margin-top: 10vh;
+      width: 100%;
+    }
+  }
+}
+
+/* Datos Cliente */
+
+#datos-cliente{
+  background-color: #161616;
+  font-family: $open;
+  border-bottom: 1.5px solid $gris3;
+  padding: 20px 0;
+  .row{
+    margin: 0 !important;
+  }
+  #datos{
+    p{
+      margin: 0;
+    }
+    #nombre, .nombre{
+      color:#FCFCFC ;
+      font-size: 1em;
+    }
+    #cuenta, .cuenta{
+      color: $verde;
+      font-weight: $open-bold;
+      font-size: 1.1em;
+    }
+    .saldo, .saldo{
+      color:#FCFCFC ;
+      font-size: 10px;
+    }
+    #cantidad, .cantidad {
+      color: $azul;
+      font-size: 1.1em;
+      font-weight: $open-bold;
+    }
+  }
+  #movimientos{
+    color: $amari;
+  }
+}
+
+#franjas{
+  position: fixed;
+  top: 3.5rem;
+  .row {
+    .col {
+    padding: 0;
+  }
+}
+  background-color: transparent;
+  .color{
+    width: 100vw !important;
+    background-color: transparent;
+    height: 5px !important;
+  }
+    .franja{
+      width: 100%;
+      height: 5px !important;
+      display: inline-block;
+    }
+    .verde{
+      background-color: $verde;
+    }
+    .rojo {
+      background-color: $rojo;
+    }
+    .azul{
+      background-color: $azul;
+    }
+    .amarillo {
+      background-color: $amari;
+    }
+}
+/* nav */
+.button-collapse {
+  float: right !important;
+}
+
+.responsive-img{
+  margin-top: 10px;
+  z-index: 10;
+}
+
+/* Principal */
+.fondo-i{
+  background-color: #161616 !important;
+  padding: 10px 0 !important;
+  img{
+    opacity: 0.8;
+  }
+  .titulo{
+    color: $gris3;
+    font-weight: $open-bold;
+    text-transform: uppercase;
+  }
+}
+
+.principal {
+  background-color: #161616 !important;
+}
+footer {
+  margin-top:20px;
+  height: 15vh;
+  background-color: #161616 !important;
+  .common-box {
+    text-align: center;
+    padding: 5px !important;
+    img{
+      max-width: 60%;
+      margin: 0 auto;
+    }
+    h5{
+      font-size: 12px !important;
+      font-weight: $open-bold;
+      margin: 0;
+    }
+  }
+}
+
+/* Mapa */
+
+#mapa-cajeros{
+  padding:20px;
+}
+#map {
+  width: 100%;
+  height: 60vh;
+}
+
+/* botones */
+#botones{
+  padding-top: 10vh;
+  .btnface {
+    background-color: #3B5998 !important;
+  }
+  .btngoogle{
+    background-color: #ffffff !important;
+    color: #EA4335 !important;
+    margin: 30px 0;
+  }
+  .btn-boton{
+    width: 100% !important;
+  }
+  .escape{
+    margin-top: 10vh;
+    font-size: 1.1em;
+    color: white;
+    background-color: $rojo !important;
+  }
+}
+
+
+/* login */
+
+#login-normal{
+  padding-top: 20vh;
+  color: $gris3;
+  .input-field input[type=text]:focus + label {
+   color: $verde;
+    box-shadow: none !important;
+  }
+  .input-field input[type=text]:focus {
+   border-bottom: 1px solid $verde;
+   box-shadow: none !important;
+  }
+  .input-field input[type=password]:focus + label {
+   color: $verde;
+    box-shadow: none !important;
+  }
+  .input-field input[type=password]:focus {
+   border-bottom: 1px solid $verde;
+   box-shadow: none !important;
+  }
+}
+.mb-botonentrar{
+  a{
+    color: white;
+  }
+}
+
+/* ahorros */
+
+#ahorros {
+  .meta{
+    background-color: $verde;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    p{
+      margin: 0;
+    }
+
+  }
+  .boton-ahorro{
+    background-color: $azul !important;
+    width: 100% !important;
+    margin-top: 20px;
+  }
+}
+
+/* Transferencia */
+
+#transferencia {
+  .btn-transf{
+    margin-top: 15px;
+    width: 100%;
+    background-color: $azul !important;
+    .fa{
+      margin-right: 5px;
+    }
+  }
+  #transferiracontacto{
+    margin-top: 15px;
+    width: 100%;
+    background-color: $verde;
+    color: white;
+    padding: 10px;
+  }
+}

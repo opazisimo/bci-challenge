@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bci</title>
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="principal">
+<!-- Nav -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a class="pull-left atras" href="index1.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+          <a href="index.html" class="brand-logo center">
+            <img class="responsive-img" src="img/img/logo.jpg" width="80">
+          </a>
+          <a href="#" data-activates="slide-out" class="pull-right button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+        <ul id="slide-out" class="side-nav">
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Transferencia</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="btn btn-logout" type="button" href="#!">Salir</a></li>
+        </ul>
+      </div>
+    </nav>
+<!-- Franja -->
+    <div id="franjas">
+      <div class="row">
+        <div class="color">
+          <div class="col s3">
+            <div class="verde franja"></div>
+          </div>
+          <div class="col s3">
+            <div class="rojo franja"></div>
+          </div>
+          <div class="col s3">
+            <div class="azul franja"></div>
+          </div>
+          <div class="col s3">
+            <div class="amarillo franja"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Datos Usuario -->
+  <section id="datos-cliente">
+    <div class="container">
+      <div class="row">
+        <div id="datos" class="col s8 offset-s3 right-align">
+          <p id="nombre" class="right-align"></p>
+          <p id="cuenta" class="right-align">CTA CTE N°45259186</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Main -->
+  <main id="transferencia">
+    <div class="container">
+      <div class="row">
+        <div class="boton col s12">
+          <button class="btn btn-large btn-transf">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Transferir a contacto
+          </button>
+        </div>
+
+        <div class="boton col s12">
+          <button class="btn btn-large btn-transf">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            Agregar contacto
+          </button>
+        </div>
+        <div class="resp-btn col s12 center-align">
+          <div id="transferiracontacto">
+            <p>Transferir a:</p>
+            <strong>Andrea Suarez</strong>
+            <div class="input-field">
+              <input id="monto" type="text" class="validate">
+              <label for="monto">Monto</label>
+            </div>
+            <div class="input-field">
+              <input id="asunto" type="text" class="validate">
+              <label for="asunto">Asunto</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+        <div id="agregarcontacto" class="resp-btn col s12">
+
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- Script -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/a4f2ba36c5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 node_modules/*
 dist/css/style.min.css
-dist/js/script.min.js
+dist/js/*.js
 dist/img/*
+.DS_Store
