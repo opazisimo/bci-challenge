@@ -123,11 +123,10 @@ footer {
   height: 15vh;
   background-color: #161616 !important;
   .common-box {
-    height: 15vh !important;
     text-align: center;
     padding: 5px !important;
     img{
-      width: 60%;
+      max-width: 60%;
       margin: 0 auto;
     }
     h5{
