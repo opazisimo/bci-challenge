@@ -45,26 +45,26 @@
   <section id="datos-cliente">
     <div class="container">
       <div class="row">
-        <div class="col s3">
-          <img src="img/img/avatar.png" alt="">
-        </div>
-        <div id="datos" class="col s8 right-align">
+        <div id="datos" class="col s8 offset-s3 right-align">
           <p id="nombre" class="right-align">María José Baeza</p>
           <p id="cuenta" class="right-align">CTA CTE N°45259186</p>
-          <p class="right-align saldo">Saldo Disponible</p>
-          <p id="cantidad" class="right-align">$23.232.400</p>
         </div>
       </div>
     </div>
   </section>
 <!-- Main -->
-  <main class="cartola">
+  <main id="mapa-cajeros">
+    <div id="map"></div>
 
   </main>
 <!-- Script -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://use.fontawesome.com/a4f2ba36c5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/jquery.rut.chileno.js"></script>
+  <script src="js/map.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.442397,-70.625988&radius=5000&types=atm&key=AIzaSyCDSwzTvDZHi0oXcJivvWtB8zBopMRrIaU"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDSwzTvDZHi0oXcJivvWtB8zBopMRrIaU&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>
