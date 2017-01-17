@@ -45,14 +45,19 @@ function qrDecoder(){
 
 }
 */
-function capturarDatos(){
-  var cuentaStart = document.getElementById("cuentaStart").value;
-  var cuentaFin = document.getElementById("cuentaFin").value;
-  var rutFin = document.getElementById("rutFin").value;
-  var montoTransf = document.getElementById("montoTransf").value;
+/*function capturarDatos(){
+  var cuentaStart = $("#cuentaStart").text();
+  var cuentaFin = $("#cuentaFin").text();
+  var rutFin = $("#rutFin").text();
+  var montoTransf = $("#montoTransf").text();
+
+  datosQr = '{"desde": {"cuenta": '+cuentaStart+' }, "hacia": {"cuenta": '+ cuentaFin+',"rut": "'+rutFin+'"},"monto": '+montoTransf+'}';
+  console.log(datosQr);
+  transferir(datosQr);
 }
-var datosTrans = "12113333-7,1005,20000"
-function transferir(){
+
+
+function transferir(datosQr){
     $.ajax({
    url: 'https://api.us.apiconnect.ibmcloud.com/hackaton-2016-produccion-master/api/transferencias',
    type: 'POST',
@@ -73,7 +78,7 @@ function transferir(){
   .fail(function() {
    console.log("error");
  });  
-}
+}*/
 
 function ajaxCartola(){
   var cuenta = '1006';
@@ -125,5 +130,4 @@ $('#btn-login').click(function(event) {
 
 ajaxProductos();
 ajaxCartola();
-qrDecoder();
-
+capturarDatos();
