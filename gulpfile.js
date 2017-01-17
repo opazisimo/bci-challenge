@@ -9,18 +9,27 @@ var minifyCSS = require('gulp-minify-css');
 gulp.task('webserver', function() {
   gulp.src('dist/')
     .pipe(webserver({
-      fallback: 'index.html',
+      fallback: 'login.html',
       livereload: true,
       directoryListing: false,
       open: true
     }));
 });
 
-gulp.task('script', function(){
+/*gulp.task('script', function(){
   gulp.src('src/js/custom.js')
   .pipe(concat('script.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js'));
+});*/
+gulp.task('script', function(){
+  //tarea
+  gulp.src('src/js/custom.js')
+  //unirlo
+  .pipe(concat('script.min.js'))
+  //minificarlo
+  .pipe(uglify())
+  .pipe(gulp.dest('dist/js'));//para dejarlo en esa carpeta
 });
 
 gulp.task('image', function() {
