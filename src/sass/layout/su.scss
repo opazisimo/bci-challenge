@@ -42,20 +42,20 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
     p{
       margin: 0;
     }
-    #nombre{
+    #nombre, .nombre{
       color:#FCFCFC ;
       font-size: 1em;
     }
-    #cuenta {
+    #cuenta, .cuenta{
       color: $verde;
       font-weight: $open-bold;
       font-size: 1.1em;
     }
-    .saldo {
+    .saldo, .saldo{
       color:#FCFCFC ;
       font-size: 10px;
     }
-    #cantidad {
+    #cantidad, .cantidad {
       color: $azul;
       font-size: 1.1em;
       font-weight: $open-bold;
