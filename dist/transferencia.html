@@ -54,7 +54,43 @@
   </section>
 <!-- Main -->
   <main id="transferencia">
+    <div class="container">
+      <div class="row">
+        <div class="boton col s12">
+          <button class="btn btn-large btn-transf">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Transferir a contacto
+          </button>
+        </div>
 
+        <div class="boton col s12">
+          <button class="btn btn-large btn-transf">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            Agregar contacto
+          </button>
+        </div>
+        <div class="resp-btn col s12 center-align">
+          <div id="transferiracontacto">
+            <p>Transferir a:</p>
+            <strong>Andrea Suarez</strong>
+            <div class="input-field">
+              <input id="monto" type="text" class="validate">
+              <label for="monto">Monto</label>
+            </div>
+            <div class="input-field">
+              <input id="asunto" type="text" class="validate">
+              <label for="asunto">Asunto</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+        <div id="agregarcontacto" class="resp-btn col s12">
+
+        </div>
+      </div>
+    </div>
   </main>
 <!-- Script -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
