@@ -9,7 +9,7 @@ var minifyCSS = require('gulp-minify-css');
 gulp.task('webserver', function() {
   gulp.src('dist/')
     .pipe(webserver({
-      fallback: 'index.html',
+      fallback: 'login.html',
       livereload: true,
       directoryListing: false,
       open: true
