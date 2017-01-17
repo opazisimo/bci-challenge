@@ -33,6 +33,20 @@
 	background-color: #EA4335;
 	margin-right:2%;
 }
+/*Style cuentas html */ 
+.cuentas-cont{
+	background-color: $azul !important;
+	color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+.btn-transferir{
+	background-color: $verde !important;
+	margin-left: 20%;
+}
+.mb-titulo{
+	margin-left: 25%;
+}
 /*
 Instrucciones:
 -Cada vez que creo una clase, le pondré mis iniciales y luego el nombre:
