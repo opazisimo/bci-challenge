@@ -48,6 +48,17 @@
 .mj-botoncs{
 	background-color: $verde !important;
 }
+/* Style navbar */
+.mb-navbar{
+	background-color: #000 !important;
+	color: #fff !important;
+}
+
+.side-nav{
+	a{
+		color: white;
+	}
+}
 /*
 Instrucciones:
 -Cada vez que creo una clase, le pondré mis iniciales y luego el nombre:
