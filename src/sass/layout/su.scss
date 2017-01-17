@@ -7,3 +7,23 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
 
 -Cada sección que hago la parto con un comentario con el nombre de la sección a trabajar
 */
+
+
+/* Splash Screen */
+
+#splash {
+  background-color: $negro;
+  text-align: center;
+  height: 100vh;
+  padding-top: 33vh;
+
+  .load{
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+    img{
+      margin-top: 10vh;
+      width: 100%;
+    }
+  }
+}
