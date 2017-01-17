@@ -15,32 +15,40 @@
     <nav>
       <div class="container">
         <div class="nav-wrapper">
-          <a class="pull-left atras" href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+          <a class="pull-left atras" href="inicio.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
           <a href="index.html" class="brand-logo center">
             <img class="responsive-img" src="img/img/logo.jpg" width="80">
           </a>
           <a href="#" data-activates="slide-out" class="pull-right button-collapse"><i class="material-icons">menu</i></a>
         </div>
         <ul id="slide-out" class="side-nav">
-          <li><a href="#">Mis cuentas</a></li>
+          <li><a href="#">Mi cuenta</a></li>
           <li><a href="#">Transferencia</a></li>
           <li><div class="divider"></div></li>
           <li><a class="btn btn-logout" type="button" href="#!">Salir</a></li>
         </ul>
       </div>
     </nav>
-  </div>
 <!-- Franja -->
-  <!--
-    <section id="franjas">
+    <div id="franjas">
+      <div class="row">
         <div class="color">
-          <div class="verde franja"></div>
-          <div class="rojo franja"></div>
-          <div class="azul franja"></div>
-          <div class="amarillo franja"></div>
+          <div class="col s3">
+            <div class="verde franja"></div>
+          </div>
+          <div class="col s3">
+            <div class="rojo franja"></div>
+          </div>
+          <div class="col s3">
+            <div class="azul franja"></div>
+          </div>
+          <div class="col s3">
+            <div class="amarillo franja"></div>
+          </div>
         </div>
-    </section>
-   -->
+      </div>
+    </div>
+  </div>
 <!-- Datos Usuario -->
   <section id="datos-cliente">
     <div class="container">
@@ -54,12 +62,80 @@
   </section>
 <!-- Main -->
   <main id="transferencia">
+    <div class="container">
+      <div class="row">
+        <div class="boton col s12">
+          <button class="btn btn-large btn-transf">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Transferir a contacto
+          </button>
+        </div>
 
+
+        <div class="resp-btn col s12 center-align">
+          <div id="transferiracontacto">
+            <strong>Transferir</strong>
+            <p>Cuenta de salida</p>
+            <div class="input-field">
+              <input id="cuentaStart" type="text" class="validate">
+              <label for="monto">N° Cuenta</label>
+            </div>
+            <p>Cuenta de llegada</p>
+            <div class="input-field">
+              <input id="cuentaFin" type="text" class="validate">
+              <label for="asunto">N° de Cuenta</label>
+            </div>
+            <div class="input-field">
+              <input id="rutFin" type="text" class="validate">
+              <label for="monto">RUT Destinatario</label>
+            </div>
+            <div class="input-field">
+              <input id="montoTransf" type="text" class="validate">
+              <label for="asunto">Monto</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Transferir
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="boton col s12">
+          <button class="btn btn-large btn-transf">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            Agregar contacto
+          </button>
+        </div>
+        <div class="resp-btn col s12 center-align">
+          <div id="transferiracontacto">
+            <p>Agregar a:</p>
+            <div class="input-field">
+              <input id="nombre" type="text" class="validate">
+              <label for="monto">Nombre</label>
+            </div>
+            <div class="input-field">
+              <input id="nrocuenta" type="text" class="validate">
+              <label for="asunto">N° Cuenta</label>
+            </div>
+            <div class="input-field">
+              <input id="email" type="text" class="validate">
+              <label for="asunto">Email</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Add
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+        <!--div id="agregarcontacto" class="resp-btn col s12"-->
+
+        </div>
+      </div>
+    </div>
   </main>
 <!-- Script -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://use.fontawesome.com/a4f2ba36c5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="js/majo.js"></script>
   <script src="js/map.js"></script>
   <script src="js/script.min.js"></script>
 </body>
