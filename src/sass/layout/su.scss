@@ -198,3 +198,23 @@ footer {
     color: white;
   }
 }
+
+/* ahorros */
+
+#ahorros {
+  .meta{
+    background-color: $verde;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    p{
+      margin: 0;
+    }
+
+  }
+  .boton-ahorro{
+    background-color: $azul !important;
+    width: 100% !important;
+    margin-top: 20px;
+  }
+}
