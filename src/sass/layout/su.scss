@@ -7,3 +7,71 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
 
 -Cada sección que hago la parto con un comentario con el nombre de la sección a trabajar
 */
+
+
+/* Splash Screen */
+
+#splash {
+  background-color: $negro;
+  text-align: center;
+  height: 100vh;
+  padding-top: 33vh;
+
+  .load{
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+    img{
+      margin-top: 10vh;
+      width: 100%;
+    }
+  }
+}
+
+/* Datos Cliente */
+
+#datos-cliente{
+  /*
+  .colores{
+    .color{
+      display: inline;
+      width: 25%;
+      height: 15px;
+      content: "gola";
+    }
+    &.verde{
+      background-color: $verde;
+    }
+    &.rojo {
+      background-color: $rojo;
+    }
+    &.azul{
+      background-color: $azul;
+    }
+    &.amarillo {
+      background-color: $amari;
+    }*/
+  /*}*/
+  background-color: #161616;
+  font-family: $open;
+  #datos{
+    #nombre{
+      color:#FCFCFC ;
+      font-size: 1.2em;
+    }
+    #cuenta {
+      color: $verde;
+      font-weight: $open-bold;
+      font-size: 1.5em;
+    }
+    .saldo {
+      color:#FCFCFC ;
+      font-size: 12px;
+    }
+    #cantidad {
+      color: $azul;
+      font-size: 1.5em;
+      font-weight: $open-bold;
+    }
+  }
+}
