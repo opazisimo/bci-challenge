@@ -24,7 +24,7 @@ gulp.task('webserver', function() {
 });*/
 gulp.task('script', function(){
   //tarea
-  gulp.src('src/js/custom.js')
+  gulp.src('src/js/*.js')
   //unirlo
   .pipe(concat('script.min.js'))
   //minificarlo
