@@ -11,32 +11,34 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
 	background: $negro;
 	.row {
 		.col {
-			padding: 0 0.1rem;
-		}
+		padding: 0;
 	}
+}
 
-	.common-box {
-		max-width: 100%;
-	}
-
+.common-box { 
+	max-width: 100%;
+}
 	.common-box__1 { background: $verde; }
 	.common-box__2 { background: $rojo; }
 	.common-box__3 { background: $azul; }
 	.common-box__4 { background: $amari; }
-/*
-	.common-box__figure {
-		max-width: 100%;
+
+	.common-box__figure { 
+		max-width: 100%; 
 		img {
 			max-width: 100%;
 			margin-left: 50%;
 			transform: translateX(-48%);
 			padding-top: 1rem;
-		}
-	}*/
+		} 	
+	}
 
 	.common-box__body {
-		color: white !important;
+		color: white;
 		text-transform: uppercase;
+		max-width: 100%;
 		text-align: center;
+		font-size: 1.2rem;
+		padding-bottom: 1rem;
 	}
 }
