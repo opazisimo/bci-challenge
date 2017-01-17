@@ -20,7 +20,7 @@ function initMap() {
       service.nearbySearch({
         location: pos,
         radius: 5000,
-        types: ['atm'|'bank']
+        types: ['atm']
       }, callback);
       new google.maps.InfoWindow().setPosition(pos);
       new google.maps.InfoWindow().setContent('Location found.');
