@@ -108,6 +108,10 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
   z-index: 10;
 }
 
+.circle{
+  width: 100%;
+}
+
 /* Principal */
 .fondo-i{
   background-color: #161616 !important;
@@ -242,6 +246,28 @@ footer {
     background-color: $verde;
     color: white;
     padding: 10px;
-    
+
+  }
+}
+
+#ahorros{
+  color: white;
+  .formu {
+    background-color: $azul;
+    padding: 15px;
+    margin-top: 15px;
+    .btn{
+      background-color: yellow;
+      color: $gris2 !important;
+      width: 100%;
+    }
+    .input-field input[type=text]:focus + label {
+     color: white !important;
+      box-shadow: none !important;
+    }
+    .input-field input[type=text]:focus {
+     border-bottom: 1px solid white !important;
+     box-shadow: none !important;
+    }
   }
 }
