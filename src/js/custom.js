@@ -4,7 +4,7 @@
 
 
 //RECUPERAR DATOS PRODUCTOS DE CLIENTE
-var rut = $('#rut').val();
+//var rut = $('#rut').val();
 
 function ajaxProductos(){
   $.ajax({
@@ -28,7 +28,53 @@ function ajaxProductos(){
    console.log("error");
  });  
 }
-var dt;
+/*var datosTrans = "12113333-7,1005,20000";
+var datosQr;
+function qrDecoder(){
+  datosTrans = datosTrans.split(',');
+  datosQr = '{"desde": {"cuenta": 1006 }, "hacia": {"cuenta": '+ datosTrans[1]+',"rut": "'+datosTrans[0]+'"},"monto": '+datosTrans[2]+'}';
+  
+  $.ajax({
+   url: 'https://api.us.apiconnect.ibmcloud.com/hackaton-2016-produccion-master/api/transferencias',
+   type: 'POST',
+   headers: {
+    "rut" : "11114444-9"
+  },
+  body: {datosQr}
+});
+
+}
+*/
+function capturarDatos(){
+  var cuentaStart = document.getElementById("cuentaStart").value;
+  var cuentaFin = document.getElementById("cuentaFin").value;
+  var rutFin = document.getElementById("rutFin").value;
+  var montoTransf = document.getElementById("montoTransf").value;
+}
+var datosTrans = "12113333-7,1005,20000"
+function transferir(){
+    $.ajax({
+   url: 'https://api.us.apiconnect.ibmcloud.com/hackaton-2016-produccion-master/api/transferencias',
+   type: 'POST',
+   datatype: 'json',
+   headers: {
+    "rut" : "11114444-9"
+  }
+})
+  .done(function(response) {
+    console.log(response);
+    var responseString = JSON.stringify(response);
+    sessionStorage.setItem('perfil', responseString);
+    $('#nombre').text(response.nombre.toUpperCase());
+    $('#cantidad').text(response.saldo_total_cuentas);
+
+   //console.log(response);
+ })
+  .fail(function() {
+   console.log("error");
+ });  
+}
+
 function ajaxCartola(){
   var cuenta = '1006';
   $.ajax({
@@ -61,7 +107,7 @@ function ajaxCartola(){
     $('#cargo3').text(response["3"].cargo);
     $('#abono3').text(response["3"].abono);
 
- })
+  })
   .fail(function() {
    console.log("error");
  });  
@@ -72,5 +118,12 @@ $('#btn-login').click(function(event) {
   $("#elementos").empty();
 });
 
+
+
+
+
+
 ajaxProductos();
 ajaxCartola();
+qrDecoder();
+
