@@ -27,3 +27,50 @@ Todo esto para evitar pisarnos a la hora de hacer clases nuevas :)
     }
   }
 }
+
+/* Datos Cliente */
+
+#datos-cliente{
+  .colores{
+    .color{
+      display: inline;
+      width: 25%;
+      height: 15px;
+      content: "gola";
+    }
+    &.verde{
+      background-color: $verde;
+    }
+    &.rojo {
+      background-color: $rojo;
+    }
+    &.azul{
+      background-color: $azul;
+    }
+    &.amarillo {
+      background-color: $amari;
+    }
+  }
+  background-color: #161616;
+  font-family: $open;
+  #datos{
+    #nombre{
+      color:#FCFCFC ;
+      font-size: 1.2em;
+    }
+    #cuenta {
+      color: $verde;
+      font-weight: $open-bold;
+      font-size: 1.5em;
+    }
+    .saldo {
+      color:#FCFCFC ;
+      font-size: 12px;
+    }
+    #cantidad {
+      color: $azul;
+      font-size: 1.5em;
+      font-weight: $open-bold;
+    }
+  }
+}
