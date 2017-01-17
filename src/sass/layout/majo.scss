@@ -1,5 +1,18 @@
-/*
+/*Style Login */ 
+.mb-contenedor{
+	margin-left: 20% !important;
+}
+.mb-botonentrar{
+	background-color: $verde !important;
+}
+.mb-background{
+	background-color: #161616;
+}
+.mb-icon{
+	color: $gris2;
+}
 
+/*
 Instrucciones:
 -Cada vez que creo una clase, le pondré mis iniciales y luego el nombre:
 Ej: En vez de hacer clase "navbar", le pongo "as-navbar" (si es que soy Andrea Suarez)
