@@ -71,25 +71,34 @@
           </button>
         </div>
 
-        
+
         <div class="resp-btn col s12 center-align">
           <div id="transferiracontacto">
-            <p>Transferir a:</p>
-            <strong>Andrea Suarez</strong>
+            <strong>Transferir</strong>
+            <p>Cuenta de salida</p>
             <div class="input-field">
-              <input id="monto" type="text" class="validate">
-              <label for="monto">Monto</label>
+              <input id="cuentaStart" type="text" class="validate">
+              <label for="monto">N° Cuenta</label>
+            </div>
+            <p>Cuenta de llegada</p>
+            <div class="input-field">
+              <input id="cuentaFin" type="text" class="validate">
+              <label for="asunto">N° de Cuenta</label>
             </div>
             <div class="input-field">
-              <input id="asunto" type="text" class="validate">
-              <label for="asunto">Asunto</label>
+              <input id="rutFin" type="text" class="validate">
+              <label for="monto">RUT Destinatario</label>
             </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <div class="input-field">
+              <input id="montoTransf" type="text" class="validate">
+              <label for="asunto">Monto</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Transferir
               <i class="material-icons right">send</i>
             </button>
           </div>
         </div>
-        
+
         <div class="boton col s12">
           <button class="btn btn-large btn-transf">
             <i class="fa fa-user-plus" aria-hidden="true"></i>
